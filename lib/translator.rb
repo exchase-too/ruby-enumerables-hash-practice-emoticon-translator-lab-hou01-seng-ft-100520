@@ -15,14 +15,14 @@ def load_library(emoticon_file)
   final_hash
 end
 
-def get_japanese_emoticon (emoticon_file, english_text)
+def get_japanese_emoticon (emoticon_file, english_emot)
   temp_hash = load_library(emoticon_file)
   apology_string = "Sorry, that emoticon was not found"
   temp_hash.each do |key,value|
     index_hash = value
-    binding.pry
-    index_hash.each do 
-    if temp_hash.key.to_s == english_text
+#    binding.pry
+    index_hash.each do |nest_key, nest_value|
+    if  == english_emot
       binding.pry
       return index_hash[1].value 
     end
