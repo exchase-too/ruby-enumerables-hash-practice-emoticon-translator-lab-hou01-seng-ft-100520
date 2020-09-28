@@ -22,7 +22,7 @@ def get_japanese_emoticon (emoticon_file, english_emot)
     nest_hash = value
 #    binding.pry
     nest_hash.each do |nest_key, nest_value|
-      binding.pry
+#      binding.pry
       if nest_hash[:english] == english_emot
       binding.pry
       return nest_hash[:japanese] 
