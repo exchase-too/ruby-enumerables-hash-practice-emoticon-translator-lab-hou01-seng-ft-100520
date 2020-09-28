@@ -22,6 +22,7 @@ def get_japanese_emoticon (emoticon_file, english_emot)
     index_hash = value
 #    binding.pry
     index_hash.each do |nest_key, nest_value|
+      binding.pry
       if index_hash[0] == english_emot
       binding.pry
       return index_hash[1] 
