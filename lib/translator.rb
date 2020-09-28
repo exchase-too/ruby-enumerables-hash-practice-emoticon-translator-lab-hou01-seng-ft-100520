@@ -21,6 +21,7 @@ def get_japanese_emoticon (emoticon_file, english_text)
   temp_hash.each do |key,value|
     index_hash = value
     binding.pry
+    index_hash.each do 
     if temp_hash.key.to_s == english_text
       binding.pry
       return index_hash[1].value 
