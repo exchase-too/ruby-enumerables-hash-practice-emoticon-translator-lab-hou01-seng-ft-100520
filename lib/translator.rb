@@ -25,7 +25,7 @@ def get_japanese_emoticon (emoticon_file, english_emot)
       binding.pry
       if index_hash[:english] == english_emot
       binding.pry
-      return index_hash[1] 
+      return index_hash[:japanese] 
       end
     end
   end
